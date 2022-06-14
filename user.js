@@ -29,7 +29,8 @@ router.route('/user/:id')
         })
     })
     .delete((req, res)=>{
-        res.send('delete a user')
+        const id = req.params.id
+        res.send(`delete user with id ${id}`)
     })
 
 module.exports = router
